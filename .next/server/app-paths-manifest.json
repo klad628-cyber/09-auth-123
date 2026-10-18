@@ -1,0 +1,19 @@
+{
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/logout/route": "app/api/auth/logout/route.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/api/auth/session/route": "app/api/auth/session/route.js",
+  "/api/notes/[id]/route": "app/api/notes/[id]/route.js",
+  "/api/notes/route": "app/api/notes/route.js",
+  "/api/users/me/route": "app/api/users/me/route.js",
+  "/icon.svg/route": "app/icon.svg/route.js",
+  "/page": "app/page.js",
+  "/@modal/(.)notes/[id]/page": "app/@modal/(.)notes/[id]/page.js",
+  "/notes/[id]/page": "app/notes/[id]/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(public)/signup/page": "app/(public)/signup/page.js",
+  "/(private)/profile/edit/page": "app/(private)/profile/edit/page.js",
+  "/(private)/profile/page": "app/(private)/profile/page.js",
+  "/(public)/signin/page": "app/(public)/signin/page.js",
+  "/notes/filter/[...slug]/page": "app/notes/filter/[...slug]/page.js"
+}

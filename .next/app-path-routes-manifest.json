@@ -1,0 +1,19 @@
+{
+  "/api/auth/login/route": "/api/auth/login",
+  "/api/auth/logout/route": "/api/auth/logout",
+  "/api/auth/register/route": "/api/auth/register",
+  "/api/auth/session/route": "/api/auth/session",
+  "/api/notes/[id]/route": "/api/notes/[id]",
+  "/api/notes/route": "/api/notes",
+  "/api/users/me/route": "/api/users/me",
+  "/icon.svg/route": "/icon.svg",
+  "/page": "/",
+  "/@modal/(.)notes/[id]/page": "/(.)notes/[id]",
+  "/notes/[id]/page": "/notes/[id]",
+  "/_not-found/page": "/_not-found",
+  "/(public)/signup/page": "/signup",
+  "/(private)/profile/edit/page": "/profile/edit",
+  "/(private)/profile/page": "/profile",
+  "/(public)/signin/page": "/signin",
+  "/notes/filter/[...slug]/page": "/notes/filter/[...slug]"
+}
