@@ -1,0 +1,27 @@
+.menuList {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menuItem {
+  min-width: 0;
+}
+
+.menuLink {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.menuLink:hover,
+.menuLink:focus-visible {
+  background: var(--mint);
+  color: var(--ink);
+}

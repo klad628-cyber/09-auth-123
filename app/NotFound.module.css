@@ -1,0 +1,19 @@
+.container {
+  width: min(100% - 40px, 800px);
+  flex: 1;
+  margin: auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 500;
+}
+
+.description {
+  margin: 0;
+  color: var(--muted);
+}

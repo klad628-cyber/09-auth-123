@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  width: min(100% - 64px, 1120px);
+  flex: 1;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 36px;
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.sidebar {
+  min-width: 0;
+}
+
+.notesWrapper {
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: calc(100% - 40px);
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 32px 0 56px;
+  }
+}

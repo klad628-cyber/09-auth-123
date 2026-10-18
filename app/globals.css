@@ -1,0 +1,84 @@
+:root {
+  --paper: #f4f5f0;
+  --surface: #ffffff;
+  --ink: #192a26;
+  --muted: #71807a;
+  --line: #dfe5df;
+  --accent: #dc6547;
+  --accent-dark: #b74a31;
+  --mint: #dcece2;
+  --shadow: 0 16px 48px rgb(25 42 38 / 8%);
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  color: inherit;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgb(220 101 71 / 38%);
+  outline-offset: 3px;
+}
+
+.site-shell {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.route-message {
+  width: min(100% - 40px, 800px);
+  margin: auto;
+  padding: 80px 0;
+  color: var(--muted);
+}
+
+.text-button {
+  margin-top: 12px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent-dark);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,117 @@
+.main {
+  width: min(100% - 64px, 1120px);
+  flex: 1;
+  margin: 0 auto;
+}
+.container {
+  padding: 56px 0 80px;
+}
+.heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.eyebrow {
+  margin: 0 0 7px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.title span {
+  display: inline-grid;
+  min-width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--mint);
+  color: #3c6853;
+  font-family: "Aptos", "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+.createButton {
+  display: inline-flex;
+  height: 46px;
+  align-items: center;
+  gap: 9px;
+  padding: 0 17px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    background 150ms ease,
+    transform 150ms ease;
+}
+.createButton:hover {
+  transform: translateY(-1px);
+  background: var(--accent-dark);
+}
+.createButton span {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+}
+.formError {
+  color: #a33030;
+  font-size: 14px;
+}
+.app {
+  min-width: 0;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--accent);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .main {
+    width: calc(100% - 40px);
+  }
+  .container {
+    padding: 40px 0 60px;
+  }
+  .heading {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .toolbar {
+    flex-wrap: wrap;
+  }
+}

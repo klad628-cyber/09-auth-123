@@ -1,0 +1,74 @@
+.form {
+  display: grid;
+  gap: 17px;
+}
+.formGroup {
+  display: grid;
+  gap: 7px;
+  color: #40514a;
+  font-size: 12px;
+  font-weight: 700;
+}
+.input,
+.textarea,
+.select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fbfcfa;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 400;
+}
+.input,
+.select {
+  height: 44px;
+  padding: 0 12px;
+}
+.textarea {
+  min-height: 120px;
+  padding: 11px 12px;
+  resize: vertical;
+  line-height: 1.55;
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: #9aa49f;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.cancelButton,
+.submitButton {
+  height: 46px;
+  padding: 0 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cancelButton {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+.submitButton {
+  border: 0;
+  background: var(--accent);
+  color: white;
+  transition: background 150ms ease;
+}
+.submitButton:hover:not(:disabled) {
+  background: var(--accent-dark);
+}
+.submitButton:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+.error {
+  margin: 0;
+  color: #a33030;
+  font-size: 14px;
+}
